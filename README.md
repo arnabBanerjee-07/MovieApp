@@ -23,6 +23,7 @@ npx react-native run-ios (for iOS)
 
 # APK Build Instructions
 cd android
+
 ./ gradlew assembleRelease
 
 # Key Features
@@ -40,10 +41,16 @@ Language selection between English and Spanish for multilingual support.
 
 # Technologies Used
 React Native for mobile application development,
+
 React Navigation for screen navigation,
+
 TMDB API for movie data,
-Local Storage for authentication and favorites,
+
+MMKV(Local Storage) for authentication and favorites,
+
 i18n for multilingual support,
+
 Dark/Light Themes for a customizable user experience,
+
 Pagination for seamless search results browsing
 
