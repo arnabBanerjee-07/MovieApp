@@ -64,7 +64,7 @@ const TabScreenLayout = ({ children, loading, headerText, isBack }) => {
               onPress={() => navigation.goBack()}
               style={styles.backButton}
             >
-              <Image source={assetsImages.leftIcon} style={styles.img} />
+              <Image source={assetsImages.leftIcon} style={[styles.img, {tintColor: theme.colors.backgroundColor_light}]} />
             </TouchableOpacity>
           )}
           <Text

@@ -16,11 +16,14 @@ const Settings = ({navigation}) => {
   const [selectedLan, setSelectedLan] = useState('en');
   const handleLogout = () => {
     mmkv.remove('loggedInUser');
+    mmkv.remove('favorites')
     navigation.replace('Login');
   };
+
   const changeLanguage = (lang) => {
     setSelectedLan(lang);
     i18n.changeLanguage(lang);
+    mmkv.store('language', lang)
   };
   return (
     <TabScreenLayout headerText={t('Settings')}>

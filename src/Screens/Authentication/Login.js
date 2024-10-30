@@ -12,8 +12,10 @@ import EmailIcon from 'react-native-vector-icons/Ionicons';
 import route from '../../Components/route';
 import {toast} from '@backpackapp-io/react-native-toast';
 import { useThemes } from '../../Utilis/ThemeProvider';
+import { useTranslation } from 'react-i18next';
 const Login = ({navigation}) => {
   const {theme} = useThemes()
+  const { t }  = useTranslation()
   const [password, setPassword] = useState('');
   const [mail, setMail] = useState('');
   const [showPassword, setShowPassword] = useState(true);
@@ -21,13 +23,13 @@ const Login = ({navigation}) => {
   const doValidation = () => {
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     if (!emailRegex.test(mail)) {
-      toast.error(`Please enter a valid email id`);
+      toast.error(t('validEmail'));
     } else if (mail.trim() === '') {
-      toast.error(`Email Id can't be empty`);
+      toast.error(t('emailEmpty'));
     } else if (password === '') {
-      toast.error(`Password can't be empty`);
+      toast.error(t('passwordEmpty'));
     } else if (password.length < 8) {
-      toast.error('Password must be at least 8 characters long.');
+      toast.error('passwordLength');
     } else {
       handleLogin();
     }
@@ -45,15 +47,15 @@ const Login = ({navigation}) => {
       mmkv.store('loggedInUser', mail);
       navigation.replace(route.Bottomtab);
     } else {
-      toast.error('Invalid credentials');
+      toast.error(t('invalidCredentials'));
     }
   };
   return (
-    <AuthLayout headerText={'Login'}>
+    <AuthLayout headerText={t('login')}>
       <CustomTextInput
         value={mail}
         onChangeText={text => setMail(text)}
-        placeholder="Email"
+        placeholder={t("email")}
         icon={<EmailIcon name="mail" size={20} color={theme.colors.buttonColor} />}
         secureTextEntry={false}
         autoCapitalize="none" 
@@ -61,14 +63,14 @@ const Login = ({navigation}) => {
       <CustomTextInput
         value={password}
         onChangeText={text => setPassword(text)}
-        placeholder="Password"
+        placeholder={t("password")}
         secureTextEntry={showPassword}
         showPasswordIcon
         showChangePasswordIcon
         onShowPasswordPress={() => setShowPassword(!showPassword)}
         autoCapitalize="none" 
       />
-      <MainButton top={5} bottom={5} press={doValidation} title="Login" />
+      <MainButton top={5} bottom={5} press={doValidation} title={t('login')} />
       <View style={styles.lastContainer}>
         <Text
           style={[
@@ -79,7 +81,7 @@ const Login = ({navigation}) => {
               color: theme.colors.backgroundColor_light,
             },
           ]}>
-          Haven’t made an account?
+          {t("noAccount")}
         </Text>
         <TouchableOpacity onPress={doSignup}>
           <Text
@@ -92,7 +94,7 @@ const Login = ({navigation}) => {
                 color: theme.colors.blueText,
               },
             ]}>
-            Sign Up
+            {t('signUp')}
           </Text>
         </TouchableOpacity>
       </View>

@@ -240,6 +240,7 @@ const SearchScreen = ({navigation}) => {
               ratingCount={5}
               imageSize={18}
               readonly
+              tintColor={theme.colors.white}
               startingValue={(item.vote_average / 10) * 5} // Normalize to 5-star scale
             />
             <Text
@@ -311,6 +312,7 @@ const SearchScreen = ({navigation}) => {
           renderItem={renderMovieItem}
           onEndReached={query ? handleLoadMoreSearch : handleLoadMorePopular}
           onEndReachedThreshold={0.4}
+          showsVerticalScrollIndicator={false}
           initialNumToRender={10}
             windowSize={5}
           contentContainerStyle={{paddingBottom: 120}}
@@ -369,7 +371,7 @@ const styles = StyleSheet.create({
     height: 60,
     width: '100%',
     backgroundColor: '#525057',
-    elevation: 3,
+    elevation: 2,
     borderTopRightRadius: 30,
     borderBottomRightRadius: 30,
     borderTopLeftRadius: 30,
@@ -402,7 +404,8 @@ const styles = StyleSheet.create({
   imageContainer: {
     height: 150,
     width: 100,
-    elevation: 50,
+    elevation: 3,
+    shadowColor:'#aaa',
     alignItems: 'center',
     justifyContent: 'center',
     borderTopLeftRadius: 15,

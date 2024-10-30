@@ -18,10 +18,12 @@ import {
 } from '../../Components/CustomButtons/buttons';
 import route from '../../Components/route';
 import { ThemeProvider, useThemes } from '../../Utilis/ThemeProvider';
-// import {  } from 'react-native-paper'
+import i18n from '../../Utilis/i18n';
+import { useTranslation } from 'react-i18next';
 
 const InitialScreen = props => {
   const { theme } = useThemes();
+  const {t} = useTranslation()
   const navigateToLogin = () => {
     props.navigation.navigate(route.Login);
   };
@@ -32,12 +34,7 @@ const InitialScreen = props => {
     <BasicLayout>
       <ImageBackground
         source={assetsImages.bannerImage1}
-        style={{
-          height: "100%",
-          width: "100%",
-          justifyContent: 'flex-end',
-          // alignItems: 'center',
-        }}
+        style={styles.imgStyle}
         resizeMode="stretch">
         <View
           style={[styles.box, { backgroundColor: theme.colors.transparentBackground,}]}
@@ -46,13 +43,13 @@ const InitialScreen = props => {
             top={5}
             bottom={5}
             press={navigateToLogin}
-            title="Login"
+            title={t('login')}
           />
           <TransparentButton
             top={10}
             bottom={5}
             press={navigateToSignup}
-            title="Sign Up"
+            title={t('signUp')}
           />
         </View>
       </ImageBackground>
@@ -69,5 +66,11 @@ const styles = StyleSheet.create({
    
     borderTopLeftRadius: 10,
     borderTopRightRadius: 10,
+  },
+  imgStyle: {
+    height: "100%",
+    width: "100%",
+    justifyContent: 'flex-end',
+    // alignItems: 'center',
   }
 });

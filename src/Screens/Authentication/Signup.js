@@ -14,8 +14,10 @@ import route from '../../Components/route';
 import {toast} from '@backpackapp-io/react-native-toast';
 import {assetsImages} from '../../Utilis/ImagesPath';
 import {useThemes} from '../../Utilis/ThemeProvider';
+import { useTranslation } from 'react-i18next';
 
 const Signup = ({navigation}) => {
+  const { t }  = useTranslation()
   const {theme} = useThemes();
   const [password, setPassword] = useState('');
   const [mail, setMail] = useState('');
@@ -25,15 +27,15 @@ const Signup = ({navigation}) => {
   const doValidation = () => {
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     if (!emailRegex.test(mail)) {
-      toast.error(`Please enter a valid email id`);
+      toast.error(t("validEmail"));
     } else if (mail.trim() === '') {
-      toast.error(`Email Id can't be empty`);
+      toast.error(t("emailEmpty"));
     } else if (userName.trim() === '') {
-      toast.error(`Username can't be empty`);
+      toast.error(t("usernameEmpty"));
     } else if (password === '') {
-      toast.error(`Password can't be empty`);
+      toast.error(t("passwordEmpty"));
     } else if (password.length < 8) {
-      toast.error('Password must be at least 8 characters long.');
+      toast.error(t("passwordLength"));
     } else {
       handleSignup();
     }
@@ -42,13 +44,13 @@ const Signup = ({navigation}) => {
   const handleSignup = () => {
     const allUsers = mmkv.get('users') || [];
     if (allUsers.length >= 15) {
-      toast.error('Maximum user limit reached');
+      toast.error(t("maxUsers"));
       return;
     }
 
     const userExists = allUsers.some(user => user.mail === mail);
     if (userExists) {
-      toast.error('User with this email already exists.');
+      toast.error(t("userExists"));
       return;
     }
 
@@ -58,7 +60,7 @@ const Signup = ({navigation}) => {
     mmkv.store('loggedInUser', mail);
 
     toast.success(
-      `Sign-Up successful. ${15 - allUsers.length} slots remaining.`,
+      `${t("signUpSuccess")} ${15 - allUsers.length} ${t("slotsRemaining")}`,
     );
     navigation.replace(route.Login);
   };
@@ -68,22 +70,21 @@ const Signup = ({navigation}) => {
   };
 
   return (
-    <AuthLayout headerText={'Sign Up'}>
+    <AuthLayout headerText={t('signUp')}>
       <CustomTextInput
         value={mail}
         onChangeText={text => setMail(text)}
-        placeholder="Email"
+        placeholder={t("email")}
         icon={
           <EmailIcon name="mail" size={20} color={theme.colors.buttonColor} />
         }
         secureTextEntry={false}
-        keyboardType="email-address"
         autoCapitalize="none"
       />
       <CustomTextInput
         value={userName}
         onChangeText={text => setUserName(text)}
-        placeholder="Username"
+        placeholder={t("username")}
         // icon={<UserIcon name="user" size={20} color={theme.colors.buttonColor} />}
         icon={
           <Image
@@ -97,7 +98,7 @@ const Signup = ({navigation}) => {
       <CustomTextInput
         value={password}
         onChangeText={text => setPassword(text)}
-        placeholder="Password"
+        placeholder={t("password")}
         secureTextEntry={showPassword}
         showPasswordIcon
         showChangePasswordIcon
@@ -117,7 +118,7 @@ const Signup = ({navigation}) => {
             fontSize: SIZE.regular,
             fontFamily: FONTS.medium,
           }}>
-          Already have an account?
+          {t('alreadyAccount')}
         </Text>
         <TouchableOpacity onPress={doSignup}>
           <Text
@@ -129,7 +130,7 @@ const Signup = ({navigation}) => {
                 fontFamily: FONTS.medium,
               },
             ]}>
-            Login
+            {t('login')}
           </Text>
         </TouchableOpacity>
       </View>

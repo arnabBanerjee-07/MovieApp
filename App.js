@@ -5,6 +5,7 @@ import AppContainer from './src/Navigation/Index';
 import { toast, Toasts } from '@backpackapp-io/react-native-toast';
 import { ThemeProvider, useThemes } from './src/Utilis/ThemeProvider';
 import "./src/Utilis/i18n"
+import Popup from './src/Components/ConnectionPopup';
 const App = () => {
   return (
     <ThemeProvider>
@@ -25,6 +26,7 @@ const MainApp = () => {
     <>
     <ThemeProvider>
       <AppContainer />
+      <Popup />
       <Toasts 
       overrideDarkMode={theme.mode === 'dark'}
        />

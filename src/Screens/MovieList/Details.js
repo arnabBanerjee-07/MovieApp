@@ -8,11 +8,11 @@ import {useThemes} from '../../Utilis/ThemeProvider';
 import {Rating} from 'react-native-ratings';
 import Icon from 'react-native-vector-icons/AntDesign';
 import i18n from '../../Utilis/i18n';
-import { useTranslation } from 'react-i18next';
+import {useTranslation} from 'react-i18next';
 
 const Details = props => {
   const {theme} = useThemes();
-  const {t} = useTranslation()
+  const {t} = useTranslation();
   const ID = props.route.params.movieId;
   const TITLE = props.route.params.movieName;
   const POSTER = props.route.params.moviePoster;
@@ -28,12 +28,15 @@ const Details = props => {
   const [isExpanded, setIsExpanded] = useState(true);
   const [releaseYear, setReleaseYear] = useState('');
 
+  const [id, setId] = useState('');
+  const [title, setTitle] = useState('');
+  const [poster, setPoster] = useState('');
+
   const toggleExpanded = () => {
     setIsExpanded(!isExpanded);
   };
   const getDetailContent = async () => {
-    const currentLanguage = i18n.language;
-    console.log(currentLanguage)
+    const currentLanguage = i18n?.language || 'en';
     setLoading(true);
     console.log('ID', ID);
     await authService
@@ -56,16 +59,15 @@ const Details = props => {
       });
   };
   const getCreditsContent = async () => {
-    const currentLanguage = i18n.language;
-    console.log(currentLanguage)
+    const currentLanguage = i18n?.language || 'en';
     setCLoading(true);
     console.log('ID', ID);
     await authService
       .getCreditDetails(ID, currentLanguage)
-      .then(res => {
-        console.log('Credit Details:', res?.data);
+      .then(async res => {
+        // console.log('Credit Details:', res?.data);
         let cast = res.data.cast;
-        console.log('Cast:', res.data.crew);
+        // console.log('Cast:', res.data.crew);
         const crew = res.data.crew;
 
         // Filter directors and writers, and format names as comma-separated text
@@ -104,7 +106,7 @@ const Details = props => {
   }, []);
 
   return (
-    <TabScreenLayout headerText={TITLE} isBack loading={loading && cLoading}>
+    <TabScreenLayout headerText={TITLE} isBack loading={loading || cLoading}>
       <Image
         source={{uri: `https://image.tmdb.org/t/p/w500/${POSTER}`}}
         style={{
@@ -213,7 +215,7 @@ const Details = props => {
               color: theme.colors.white,
             },
           ]}>
-          {content?.overview || 'String'}
+          {content?.overview || ''}
         </Text>
         <Text
           style={[
@@ -235,7 +237,7 @@ const Details = props => {
               color: theme.colors.white,
             },
           ]}>
-          {i18n.t('Director')} : {directors}
+          {i18n.t('Director')} : {directors || 'nA'}
         </Text>
         <Text
           style={[
@@ -246,7 +248,7 @@ const Details = props => {
               color: theme.colors.white,
             },
           ]}>
-          {i18n.t('Writer')} : {writers}
+          {i18n.t('Writer')} : {writers ? writers : 'nA'}
         </Text>
         <Text
           style={[
@@ -257,7 +259,7 @@ const Details = props => {
               color: theme.colors.white,
             },
           ]}>
-          Status :{' '}
+          {t('Status')} :{' '}
           <Text
             style={{
               color: content?.status === 'Released' && '#228B22',
@@ -384,6 +386,6 @@ const styles = StyleSheet.create({
   },
   left: {
     marginLeft: 15,
-     flex: 1
-    },
+    flex: 1,
+  },
 });

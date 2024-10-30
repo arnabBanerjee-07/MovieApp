@@ -22,5 +22,28 @@
   "Favorites": "Favorites",
   "Settings": "Settings",
   "SearchForTitle": "Search for a title...",
-  "NoFavorites": "You haven't saved any favorites. Discover movies to fill this space!"
+  "NoFavorites": "You haven't saved any favorites. Discover movies to fill this space!",
+
+  "login": "Login",
+  "email": "Email",
+  "password": "Password",
+  "noAccount": "Haven’t made an account?",
+  "signUp": "Sign Up",
+  "invalidCredentials": "Invalid credentials",
+
+  "username": "Username",
+  "createAccount": "Create Account",
+  "alreadyAccount": "Already have an account?",
+  "emailEmpty": "Email Id can't be empty",
+  "usernameEmpty": "Username can't be empty",
+  "passwordEmpty": "Password can't be empty",
+  "passwordLength": "Password must be at least 8 characters long.",
+  "maxUsers": "Maximum user limit reached",
+  "userExists": "User with this email already exists.",
+  "signUpSuccess": "Sign-Up successful",
+  "slotsRemaining": "slots remaining.",
+  "validEmail": "Please enter a valid email id",
+  "Inactive": "Inactive",
+  "Details": "Details",
+  "Status": "Status"
 }
