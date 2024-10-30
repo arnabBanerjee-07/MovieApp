@@ -1,0 +1,28 @@
+{
+    "Popular": "Popular",
+    "NowPlaying": "Reproduciendo ahora",
+    "Upcoming": "Próximamente",
+    "TopRated": "Más valorados",
+
+    
+    "Account": "Cuenta",
+    "Appearance": "Apariencia",
+    "Help": "Ayuda",
+    "Logout": "Cerrar sesión",
+    "Theme": "Tema",
+    "Language": "Idioma",
+    "Light": "Claro",
+    "Dark": "Oscuro",
+
+    "Cast": "Elenco",
+    "Writer": "Escritor",
+    "Director": "Director",
+    "Genre": "Género",
+
+    "Home": "Inicio",
+    "Search": "Buscar",
+    "Favorites": "Favoritos",
+    "Settings": "Configuración",
+    "SearchForTitle": "Busca un título...",
+    "NoFavorites": "No has guardado ningún favorito. ¡Descubre películas para llenar este espacio!"
+  }

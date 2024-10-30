@@ -1,0 +1,26 @@
+{
+  "Popular": "Popular",
+  "NowPlaying": "Now Playing",
+  "Upcoming": "Upcoming",
+  "TopRated": "Top Rated",
+  "Account": "Account",
+  "Appearance": "Appearance",
+  "Help": "Help",
+  "Logout": "Logout",
+  "Theme": "Theme",
+  "Language": "Language",
+  "Light": "Light",
+  "Dark": "Dark",
+
+  "Cast": "Cast",
+  "Writer": "Writer",
+  "Director": "Director",
+  "Genre": "Genre",
+
+  "Home": "Home",
+  "Search": "Search",
+  "Favorites": "Favorites",
+  "Settings": "Settings",
+  "SearchForTitle": "Search for a title...",
+  "NoFavorites": "You haven't saved any favorites. Discover movies to fill this space!"
+}

@@ -1,0 +1,957 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 54;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		00E356F31AD99517003FC87E /* MovieAppTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* MovieAppTests.m */; };
+		0C80B921A6F3F58F76C31292 /* libPods-MovieApp.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5DCACB8F33CDC322A6C60F78 /* libPods-MovieApp.a */; };
+		13B07FBC1A68108700A75B9A /* AppDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.mm */; };
+		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
+		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
+		7699B88040F8A987B510C191 /* libPods-MovieApp-MovieAppTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 19F6CBCC0A4E27FBF8BF4A61 /* libPods-MovieApp-MovieAppTests.a */; };
+		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
+		BF3B934EB7444F988C3F6A88 /* Inter_18pt-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8AAAF6E2E85E4810B63B8D0C /* Inter_18pt-Black.ttf */; };
+		AC75E734213149B2BBDF4FDB /* Inter_18pt-BlackItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A0B2FDC147FC4A9698D62740 /* Inter_18pt-BlackItalic.ttf */; };
+		E1E95F8B5E684B9AA26DEA78 /* Inter_18pt-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2589620621484FD189DA250A /* Inter_18pt-Bold.ttf */; };
+		FF03293199734615B7E49729 /* Inter_18pt-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 35A050A4E85F4E3E92F34F07 /* Inter_18pt-BoldItalic.ttf */; };
+		CA90C05F82474B50A908B756 /* Inter_18pt-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 55F1866294C04757BD216FF0 /* Inter_18pt-ExtraBold.ttf */; };
+		B85238CD8A844E96A79CD67C /* Inter_18pt-ExtraBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F478CE4E56E34A6A87521D74 /* Inter_18pt-ExtraBoldItalic.ttf */; };
+		1771404C044B4A51BDA23990 /* Inter_18pt-ExtraLight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 539D6299FE4449F5ACB699FF /* Inter_18pt-ExtraLight.ttf */; };
+		CC928A25522F47C69A852B05 /* Inter_18pt-ExtraLightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 789D8DF11FD5475DA4F94AA5 /* Inter_18pt-ExtraLightItalic.ttf */; };
+		D4CB854F49DF4DA8AE9E3DE2 /* Inter_18pt-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9827B33641DD48268E50C44B /* Inter_18pt-Italic.ttf */; };
+		A20551BCB00741FAA01238C3 /* Inter_18pt-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 581A3E4DC0A54B9997421A35 /* Inter_18pt-Light.ttf */; };
+		F0FD01B8F7264BFBB7925604 /* Inter_18pt-LightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0E61CAD2560E4E9AB60ACCEE /* Inter_18pt-LightItalic.ttf */; };
+		8962104EC52345BE82F14F11 /* Inter_18pt-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 024C8CA0B9EC4E17A08F6D25 /* Inter_18pt-Medium.ttf */; };
+		C4A2CD012E744C55BEE37B47 /* Inter_18pt-MediumItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3A1ABB2FDB9343E7B720C334 /* Inter_18pt-MediumItalic.ttf */; };
+		FDEF84BCCE7346ED856B2370 /* Inter_18pt-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 28B750A4EC724EECB8ACAA89 /* Inter_18pt-Regular.ttf */; };
+		DFE315611C6548F0833D902B /* Inter_18pt-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 08BB12D260D341E68CB5C503 /* Inter_18pt-SemiBold.ttf */; };
+		8C33FCD505D04079A37ABA26 /* Inter_18pt-SemiBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 441D3C721A7B4D0B9A705EA2 /* Inter_18pt-SemiBoldItalic.ttf */; };
+		F7F69A398939478C888A50B9 /* Inter_18pt-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3C28D1721EAC4B6494ADA1F3 /* Inter_18pt-Thin.ttf */; };
+		094FA427F48D4C6F93FC121E /* Inter_18pt-ThinItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F37C335654EB4FEE9EA0C5DC /* Inter_18pt-ThinItalic.ttf */; };
+		E686BD14AD004F54BF121CF3 /* Inter_24pt-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D6B6E3639E2842F09006D7E4 /* Inter_24pt-Black.ttf */; };
+		4E3FC69CA2BC45329510C3DE /* Inter_24pt-BlackItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D32B43B54E3243C19801254B /* Inter_24pt-BlackItalic.ttf */; };
+		514EFA3A6D6B4894B23738D1 /* Inter_24pt-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 17CF4B3FD014449F95E90E99 /* Inter_24pt-Bold.ttf */; };
+		368A0439CB364221ABCFE95E /* Inter_24pt-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 97A08831B93440F394D03056 /* Inter_24pt-BoldItalic.ttf */; };
+		EC79A2B86BB44C3DA1B56DB9 /* Inter_24pt-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3D78E2CBE8544428926F6C4B /* Inter_24pt-ExtraBold.ttf */; };
+		F90D0753F6DF4B1AAE31C831 /* Inter_24pt-ExtraBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 838BF9B5496341F6A626BFDF /* Inter_24pt-ExtraBoldItalic.ttf */; };
+		D3BDAE4224054928A3C17D39 /* Inter_24pt-ExtraLight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C2AF529DB9B2444EA848017A /* Inter_24pt-ExtraLight.ttf */; };
+		DA9AF545554E4593AD1585E6 /* Inter_24pt-ExtraLightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 73684029E5ED443393F0B0C0 /* Inter_24pt-ExtraLightItalic.ttf */; };
+		80914F90B6A947A2965936B2 /* Inter_24pt-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4106FE07B9DA4372BAB4F98B /* Inter_24pt-Italic.ttf */; };
+		E85F8597E04445C2BE13338F /* Inter_24pt-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B4A512B001BD4BAE91E1CF53 /* Inter_24pt-Light.ttf */; };
+		FA28C055168C41D3B6C3A37D /* Inter_24pt-LightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 6DD2D7557AAB40499B2B7288 /* Inter_24pt-LightItalic.ttf */; };
+		57CFD2DE471940DE8E7CF5DB /* Inter_24pt-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E130B839FD55419E91109F13 /* Inter_24pt-Medium.ttf */; };
+		31F9ECE52DE142DB96F5026D /* Inter_24pt-MediumItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1BF8F4C97CB844B6A5D1ECC4 /* Inter_24pt-MediumItalic.ttf */; };
+		DC21552AAB6D4BE8AF1DABE9 /* Inter_24pt-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3438C3B9E50947029EFFA6C8 /* Inter_24pt-Regular.ttf */; };
+		05BCFF71E2054DA5836862DB /* Inter_24pt-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 676B83CA797242008F9E0F92 /* Inter_24pt-SemiBold.ttf */; };
+		BB9930A579B24E78AD19C42E /* Inter_24pt-SemiBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = EBED8B434A714C17B9DA1900 /* Inter_24pt-SemiBoldItalic.ttf */; };
+		C2A44CC68B1F440299076671 /* Inter_24pt-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 6A343A012710446099B2B239 /* Inter_24pt-Thin.ttf */; };
+		CD05FF63106F4869947BFE7A /* Inter_24pt-ThinItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C2659BB5D05D4488A3DA76F6 /* Inter_24pt-ThinItalic.ttf */; };
+		B114C55886C44357A0E8D0ED /* Inter_28pt-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 081AEE2799684B6489E13809 /* Inter_28pt-Black.ttf */; };
+		A651F19FB2F44C30B29FBA85 /* Inter_28pt-BlackItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 51224B908A5C4123B32329B0 /* Inter_28pt-BlackItalic.ttf */; };
+		CDD9BB7CC77F4978A0623335 /* Inter_28pt-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FB5A8C22BDDC4C9A84897486 /* Inter_28pt-Bold.ttf */; };
+		6D1BA775A06948DC88D048F3 /* Inter_28pt-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 78D31CF22B734C8D89CC4B72 /* Inter_28pt-BoldItalic.ttf */; };
+		17B30F7C9128408BA232B205 /* Inter_28pt-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 76D90C1692AF41F698EB441E /* Inter_28pt-ExtraBold.ttf */; };
+		75CC4C1551274DFD88B37B09 /* Inter_28pt-ExtraBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D9195C9A4A234DA796512743 /* Inter_28pt-ExtraBoldItalic.ttf */; };
+		C41D4639DC79450098F4BBAD /* Inter_28pt-ExtraLight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7B60C80994CC4349AFDCED64 /* Inter_28pt-ExtraLight.ttf */; };
+		84B7A716BDFE4D358326BF0C /* Inter_28pt-ExtraLightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C2A726996F0A4FF4AB8F4182 /* Inter_28pt-ExtraLightItalic.ttf */; };
+		BD9C451FBDD8461895B09038 /* Inter_28pt-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B91E51D7CA7C42C3ABA18DEB /* Inter_28pt-Italic.ttf */; };
+		06B121CEAC2446F795E46BD6 /* Inter_28pt-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 31140DD2BA5C41A98C6BF5D4 /* Inter_28pt-Light.ttf */; };
+		9353C49D11104DE19B224BA9 /* Inter_28pt-LightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FBE179CBD8294C5FBAD825E2 /* Inter_28pt-LightItalic.ttf */; };
+		E1BA6660596D46BFBA0FA494 /* Inter_28pt-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 35F0367F7F8A4482A618E22D /* Inter_28pt-Medium.ttf */; };
+		0AE4CBA128A44D7F9B14CC4B /* Inter_28pt-MediumItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FF86536C575047209EAF5CEB /* Inter_28pt-MediumItalic.ttf */; };
+		5153C81AC8774467A1953C2E /* Inter_28pt-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A181DA43F2C748C2B9077AD8 /* Inter_28pt-Regular.ttf */; };
+		6F692C3713704D8DA02CD770 /* Inter_28pt-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 95952B0D3D6947739AE31359 /* Inter_28pt-SemiBold.ttf */; };
+		4D62FBA1AC76465A9B496F31 /* Inter_28pt-SemiBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1A3FF7B8E2094B53BC3CDDEE /* Inter_28pt-SemiBoldItalic.ttf */; };
+		60F2C829C45D4803A475AE0D /* Inter_28pt-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5AC4C5A3732D46C588396B2F /* Inter_28pt-Thin.ttf */; };
+		02A3ACC454444242BDB10B7C /* Inter_28pt-ThinItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 34750C32C77246A89C7CDC3F /* Inter_28pt-ThinItalic.ttf */; };
+		14F1A798EDDE484F8B267546 /* Roboto-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = ED280B2D5D404B2FAF9671AF /* Roboto-Black.ttf */; };
+		ECF9E5D5B9AA4CBE85596608 /* Roboto-BlackItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 278D1721C2F04150BBA20C19 /* Roboto-BlackItalic.ttf */; };
+		711AE11491224F7FB87AA03E /* Roboto-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3ACD9FC74C76427792BFF1BE /* Roboto-Bold.ttf */; };
+		F35E7B6BEB3F4FBAA9CF86E3 /* Roboto-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A93CCAD25FB3430EB423CDDA /* Roboto-BoldItalic.ttf */; };
+		7B761F4280014E61829F0B6F /* Roboto-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 6528F02E71F64651B5AB68AF /* Roboto-Italic.ttf */; };
+		15441216C6B2455CB5C5A2F4 /* Roboto-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E40449E03C664F3598EE1C69 /* Roboto-Light.ttf */; };
+		28F33DB0A7E94F1FA2E5C517 /* Roboto-LightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5292CAB7D07246D6AC82366D /* Roboto-LightItalic.ttf */; };
+		0CACD6AE7C75415883B7FFDA /* Roboto-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 50EAFE7E81B040F99F5D6386 /* Roboto-Medium.ttf */; };
+		5AE6BD5CA7C940628DEBDFB6 /* Roboto-MediumItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AF5AA323067D4254B437AA97 /* Roboto-MediumItalic.ttf */; };
+		7C9BBE0092264B3E810C959B /* Roboto-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0BC0CC68E1924F5BA2D01716 /* Roboto-Regular.ttf */; };
+		3ACF00D88CE14F24B031F2DB /* Roboto-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 37DB7AD8076F4E6897B39B73 /* Roboto-Thin.ttf */; };
+		D05E0A62F4AB448C95AACD14 /* Roboto-ThinItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C3C606AF09CB45958A180C85 /* Roboto-ThinItalic.ttf */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		00E356F41AD99517003FC87E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 83CBB9F71A601CBA00E9B192 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 13B07F861A680F5B00A75B9A;
+			remoteInfo = MovieApp;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		00E356EE1AD99517003FC87E /* MovieAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MovieAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		00E356F11AD99517003FC87E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		00E356F21AD99517003FC87E /* MovieAppTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MovieAppTests.m; sourceTree = "<group>"; };
+		13B07F961A680F5B00A75B9A /* MovieApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MovieApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		13B07FAF1A68108700A75B9A /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = MovieApp/AppDelegate.h; sourceTree = "<group>"; };
+		13B07FB01A68108700A75B9A /* AppDelegate.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = AppDelegate.mm; path = MovieApp/AppDelegate.mm; sourceTree = "<group>"; };
+		13B07FB51A68108700A75B9A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = MovieApp/Images.xcassets; sourceTree = "<group>"; };
+		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = MovieApp/Info.plist; sourceTree = "<group>"; };
+		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = MovieApp/main.m; sourceTree = "<group>"; };
+		19F6CBCC0A4E27FBF8BF4A61 /* libPods-MovieApp-MovieAppTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MovieApp-MovieAppTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3B4392A12AC88292D35C810B /* Pods-MovieApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MovieApp.debug.xcconfig"; path = "Target Support Files/Pods-MovieApp/Pods-MovieApp.debug.xcconfig"; sourceTree = "<group>"; };
+		5709B34CF0A7D63546082F79 /* Pods-MovieApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MovieApp.release.xcconfig"; path = "Target Support Files/Pods-MovieApp/Pods-MovieApp.release.xcconfig"; sourceTree = "<group>"; };
+		5B7EB9410499542E8C5724F5 /* Pods-MovieApp-MovieAppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MovieApp-MovieAppTests.debug.xcconfig"; path = "Target Support Files/Pods-MovieApp-MovieAppTests/Pods-MovieApp-MovieAppTests.debug.xcconfig"; sourceTree = "<group>"; };
+		5DCACB8F33CDC322A6C60F78 /* libPods-MovieApp.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MovieApp.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = MovieApp/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		89C6BE57DB24E9ADA2F236DE /* Pods-MovieApp-MovieAppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MovieApp-MovieAppTests.release.xcconfig"; path = "Target Support Files/Pods-MovieApp-MovieAppTests/Pods-MovieApp-MovieAppTests.release.xcconfig"; sourceTree = "<group>"; };
+		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
+		8AAAF6E2E85E4810B63B8D0C /* Inter_18pt-Black.ttf */ = {isa = PBXFileReference; name = "Inter_18pt-Black.ttf"; path = "../src/Assets/Fonts/Inter_18pt-Black.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		A0B2FDC147FC4A9698D62740 /* Inter_18pt-BlackItalic.ttf */ = {isa = PBXFileReference; name = "Inter_18pt-BlackItalic.ttf"; path = "../src/Assets/Fonts/Inter_18pt-BlackItalic.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		2589620621484FD189DA250A /* Inter_18pt-Bold.ttf */ = {isa = PBXFileReference; name = "Inter_18pt-Bold.ttf"; path = "../src/Assets/Fonts/Inter_18pt-Bold.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		35A050A4E85F4E3E92F34F07 /* Inter_18pt-BoldItalic.ttf */ = {isa = PBXFileReference; name = "Inter_18pt-BoldItalic.ttf"; path = "../src/Assets/Fonts/Inter_18pt-BoldItalic.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		55F1866294C04757BD216FF0 /* Inter_18pt-ExtraBold.ttf */ = {isa = PBXFileReference; name = "Inter_18pt-ExtraBold.ttf"; path = "../src/Assets/Fonts/Inter_18pt-ExtraBold.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		F478CE4E56E34A6A87521D74 /* Inter_18pt-ExtraBoldItalic.ttf */ = {isa = PBXFileReference; name = "Inter_18pt-ExtraBoldItalic.ttf"; path = "../src/Assets/Fonts/Inter_18pt-ExtraBoldItalic.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		539D6299FE4449F5ACB699FF /* Inter_18pt-ExtraLight.ttf */ = {isa = PBXFileReference; name = "Inter_18pt-ExtraLight.ttf"; path = "../src/Assets/Fonts/Inter_18pt-ExtraLight.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		789D8DF11FD5475DA4F94AA5 /* Inter_18pt-ExtraLightItalic.ttf */ = {isa = PBXFileReference; name = "Inter_18pt-ExtraLightItalic.ttf"; path = "../src/Assets/Fonts/Inter_18pt-ExtraLightItalic.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		9827B33641DD48268E50C44B /* Inter_18pt-Italic.ttf */ = {isa = PBXFileReference; name = "Inter_18pt-Italic.ttf"; path = "../src/Assets/Fonts/Inter_18pt-Italic.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		581A3E4DC0A54B9997421A35 /* Inter_18pt-Light.ttf */ = {isa = PBXFileReference; name = "Inter_18pt-Light.ttf"; path = "../src/Assets/Fonts/Inter_18pt-Light.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		0E61CAD2560E4E9AB60ACCEE /* Inter_18pt-LightItalic.ttf */ = {isa = PBXFileReference; name = "Inter_18pt-LightItalic.ttf"; path = "../src/Assets/Fonts/Inter_18pt-LightItalic.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		024C8CA0B9EC4E17A08F6D25 /* Inter_18pt-Medium.ttf */ = {isa = PBXFileReference; name = "Inter_18pt-Medium.ttf"; path = "../src/Assets/Fonts/Inter_18pt-Medium.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		3A1ABB2FDB9343E7B720C334 /* Inter_18pt-MediumItalic.ttf */ = {isa = PBXFileReference; name = "Inter_18pt-MediumItalic.ttf"; path = "../src/Assets/Fonts/Inter_18pt-MediumItalic.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		28B750A4EC724EECB8ACAA89 /* Inter_18pt-Regular.ttf */ = {isa = PBXFileReference; name = "Inter_18pt-Regular.ttf"; path = "../src/Assets/Fonts/Inter_18pt-Regular.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		08BB12D260D341E68CB5C503 /* Inter_18pt-SemiBold.ttf */ = {isa = PBXFileReference; name = "Inter_18pt-SemiBold.ttf"; path = "../src/Assets/Fonts/Inter_18pt-SemiBold.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		441D3C721A7B4D0B9A705EA2 /* Inter_18pt-SemiBoldItalic.ttf */ = {isa = PBXFileReference; name = "Inter_18pt-SemiBoldItalic.ttf"; path = "../src/Assets/Fonts/Inter_18pt-SemiBoldItalic.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		3C28D1721EAC4B6494ADA1F3 /* Inter_18pt-Thin.ttf */ = {isa = PBXFileReference; name = "Inter_18pt-Thin.ttf"; path = "../src/Assets/Fonts/Inter_18pt-Thin.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		F37C335654EB4FEE9EA0C5DC /* Inter_18pt-ThinItalic.ttf */ = {isa = PBXFileReference; name = "Inter_18pt-ThinItalic.ttf"; path = "../src/Assets/Fonts/Inter_18pt-ThinItalic.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		D6B6E3639E2842F09006D7E4 /* Inter_24pt-Black.ttf */ = {isa = PBXFileReference; name = "Inter_24pt-Black.ttf"; path = "../src/Assets/Fonts/Inter_24pt-Black.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		D32B43B54E3243C19801254B /* Inter_24pt-BlackItalic.ttf */ = {isa = PBXFileReference; name = "Inter_24pt-BlackItalic.ttf"; path = "../src/Assets/Fonts/Inter_24pt-BlackItalic.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		17CF4B3FD014449F95E90E99 /* Inter_24pt-Bold.ttf */ = {isa = PBXFileReference; name = "Inter_24pt-Bold.ttf"; path = "../src/Assets/Fonts/Inter_24pt-Bold.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		97A08831B93440F394D03056 /* Inter_24pt-BoldItalic.ttf */ = {isa = PBXFileReference; name = "Inter_24pt-BoldItalic.ttf"; path = "../src/Assets/Fonts/Inter_24pt-BoldItalic.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		3D78E2CBE8544428926F6C4B /* Inter_24pt-ExtraBold.ttf */ = {isa = PBXFileReference; name = "Inter_24pt-ExtraBold.ttf"; path = "../src/Assets/Fonts/Inter_24pt-ExtraBold.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		838BF9B5496341F6A626BFDF /* Inter_24pt-ExtraBoldItalic.ttf */ = {isa = PBXFileReference; name = "Inter_24pt-ExtraBoldItalic.ttf"; path = "../src/Assets/Fonts/Inter_24pt-ExtraBoldItalic.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		C2AF529DB9B2444EA848017A /* Inter_24pt-ExtraLight.ttf */ = {isa = PBXFileReference; name = "Inter_24pt-ExtraLight.ttf"; path = "../src/Assets/Fonts/Inter_24pt-ExtraLight.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		73684029E5ED443393F0B0C0 /* Inter_24pt-ExtraLightItalic.ttf */ = {isa = PBXFileReference; name = "Inter_24pt-ExtraLightItalic.ttf"; path = "../src/Assets/Fonts/Inter_24pt-ExtraLightItalic.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		4106FE07B9DA4372BAB4F98B /* Inter_24pt-Italic.ttf */ = {isa = PBXFileReference; name = "Inter_24pt-Italic.ttf"; path = "../src/Assets/Fonts/Inter_24pt-Italic.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		B4A512B001BD4BAE91E1CF53 /* Inter_24pt-Light.ttf */ = {isa = PBXFileReference; name = "Inter_24pt-Light.ttf"; path = "../src/Assets/Fonts/Inter_24pt-Light.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		6DD2D7557AAB40499B2B7288 /* Inter_24pt-LightItalic.ttf */ = {isa = PBXFileReference; name = "Inter_24pt-LightItalic.ttf"; path = "../src/Assets/Fonts/Inter_24pt-LightItalic.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		E130B839FD55419E91109F13 /* Inter_24pt-Medium.ttf */ = {isa = PBXFileReference; name = "Inter_24pt-Medium.ttf"; path = "../src/Assets/Fonts/Inter_24pt-Medium.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		1BF8F4C97CB844B6A5D1ECC4 /* Inter_24pt-MediumItalic.ttf */ = {isa = PBXFileReference; name = "Inter_24pt-MediumItalic.ttf"; path = "../src/Assets/Fonts/Inter_24pt-MediumItalic.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		3438C3B9E50947029EFFA6C8 /* Inter_24pt-Regular.ttf */ = {isa = PBXFileReference; name = "Inter_24pt-Regular.ttf"; path = "../src/Assets/Fonts/Inter_24pt-Regular.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		676B83CA797242008F9E0F92 /* Inter_24pt-SemiBold.ttf */ = {isa = PBXFileReference; name = "Inter_24pt-SemiBold.ttf"; path = "../src/Assets/Fonts/Inter_24pt-SemiBold.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		EBED8B434A714C17B9DA1900 /* Inter_24pt-SemiBoldItalic.ttf */ = {isa = PBXFileReference; name = "Inter_24pt-SemiBoldItalic.ttf"; path = "../src/Assets/Fonts/Inter_24pt-SemiBoldItalic.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		6A343A012710446099B2B239 /* Inter_24pt-Thin.ttf */ = {isa = PBXFileReference; name = "Inter_24pt-Thin.ttf"; path = "../src/Assets/Fonts/Inter_24pt-Thin.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		C2659BB5D05D4488A3DA76F6 /* Inter_24pt-ThinItalic.ttf */ = {isa = PBXFileReference; name = "Inter_24pt-ThinItalic.ttf"; path = "../src/Assets/Fonts/Inter_24pt-ThinItalic.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		081AEE2799684B6489E13809 /* Inter_28pt-Black.ttf */ = {isa = PBXFileReference; name = "Inter_28pt-Black.ttf"; path = "../src/Assets/Fonts/Inter_28pt-Black.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		51224B908A5C4123B32329B0 /* Inter_28pt-BlackItalic.ttf */ = {isa = PBXFileReference; name = "Inter_28pt-BlackItalic.ttf"; path = "../src/Assets/Fonts/Inter_28pt-BlackItalic.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		FB5A8C22BDDC4C9A84897486 /* Inter_28pt-Bold.ttf */ = {isa = PBXFileReference; name = "Inter_28pt-Bold.ttf"; path = "../src/Assets/Fonts/Inter_28pt-Bold.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		78D31CF22B734C8D89CC4B72 /* Inter_28pt-BoldItalic.ttf */ = {isa = PBXFileReference; name = "Inter_28pt-BoldItalic.ttf"; path = "../src/Assets/Fonts/Inter_28pt-BoldItalic.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		76D90C1692AF41F698EB441E /* Inter_28pt-ExtraBold.ttf */ = {isa = PBXFileReference; name = "Inter_28pt-ExtraBold.ttf"; path = "../src/Assets/Fonts/Inter_28pt-ExtraBold.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		D9195C9A4A234DA796512743 /* Inter_28pt-ExtraBoldItalic.ttf */ = {isa = PBXFileReference; name = "Inter_28pt-ExtraBoldItalic.ttf"; path = "../src/Assets/Fonts/Inter_28pt-ExtraBoldItalic.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		7B60C80994CC4349AFDCED64 /* Inter_28pt-ExtraLight.ttf */ = {isa = PBXFileReference; name = "Inter_28pt-ExtraLight.ttf"; path = "../src/Assets/Fonts/Inter_28pt-ExtraLight.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		C2A726996F0A4FF4AB8F4182 /* Inter_28pt-ExtraLightItalic.ttf */ = {isa = PBXFileReference; name = "Inter_28pt-ExtraLightItalic.ttf"; path = "../src/Assets/Fonts/Inter_28pt-ExtraLightItalic.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		B91E51D7CA7C42C3ABA18DEB /* Inter_28pt-Italic.ttf */ = {isa = PBXFileReference; name = "Inter_28pt-Italic.ttf"; path = "../src/Assets/Fonts/Inter_28pt-Italic.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		31140DD2BA5C41A98C6BF5D4 /* Inter_28pt-Light.ttf */ = {isa = PBXFileReference; name = "Inter_28pt-Light.ttf"; path = "../src/Assets/Fonts/Inter_28pt-Light.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		FBE179CBD8294C5FBAD825E2 /* Inter_28pt-LightItalic.ttf */ = {isa = PBXFileReference; name = "Inter_28pt-LightItalic.ttf"; path = "../src/Assets/Fonts/Inter_28pt-LightItalic.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		35F0367F7F8A4482A618E22D /* Inter_28pt-Medium.ttf */ = {isa = PBXFileReference; name = "Inter_28pt-Medium.ttf"; path = "../src/Assets/Fonts/Inter_28pt-Medium.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		FF86536C575047209EAF5CEB /* Inter_28pt-MediumItalic.ttf */ = {isa = PBXFileReference; name = "Inter_28pt-MediumItalic.ttf"; path = "../src/Assets/Fonts/Inter_28pt-MediumItalic.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		A181DA43F2C748C2B9077AD8 /* Inter_28pt-Regular.ttf */ = {isa = PBXFileReference; name = "Inter_28pt-Regular.ttf"; path = "../src/Assets/Fonts/Inter_28pt-Regular.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		95952B0D3D6947739AE31359 /* Inter_28pt-SemiBold.ttf */ = {isa = PBXFileReference; name = "Inter_28pt-SemiBold.ttf"; path = "../src/Assets/Fonts/Inter_28pt-SemiBold.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		1A3FF7B8E2094B53BC3CDDEE /* Inter_28pt-SemiBoldItalic.ttf */ = {isa = PBXFileReference; name = "Inter_28pt-SemiBoldItalic.ttf"; path = "../src/Assets/Fonts/Inter_28pt-SemiBoldItalic.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		5AC4C5A3732D46C588396B2F /* Inter_28pt-Thin.ttf */ = {isa = PBXFileReference; name = "Inter_28pt-Thin.ttf"; path = "../src/Assets/Fonts/Inter_28pt-Thin.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		34750C32C77246A89C7CDC3F /* Inter_28pt-ThinItalic.ttf */ = {isa = PBXFileReference; name = "Inter_28pt-ThinItalic.ttf"; path = "../src/Assets/Fonts/Inter_28pt-ThinItalic.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		ED280B2D5D404B2FAF9671AF /* Roboto-Black.ttf */ = {isa = PBXFileReference; name = "Roboto-Black.ttf"; path = "../src/Assets/Fonts/Roboto-Black.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		278D1721C2F04150BBA20C19 /* Roboto-BlackItalic.ttf */ = {isa = PBXFileReference; name = "Roboto-BlackItalic.ttf"; path = "../src/Assets/Fonts/Roboto-BlackItalic.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		3ACD9FC74C76427792BFF1BE /* Roboto-Bold.ttf */ = {isa = PBXFileReference; name = "Roboto-Bold.ttf"; path = "../src/Assets/Fonts/Roboto-Bold.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		A93CCAD25FB3430EB423CDDA /* Roboto-BoldItalic.ttf */ = {isa = PBXFileReference; name = "Roboto-BoldItalic.ttf"; path = "../src/Assets/Fonts/Roboto-BoldItalic.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		6528F02E71F64651B5AB68AF /* Roboto-Italic.ttf */ = {isa = PBXFileReference; name = "Roboto-Italic.ttf"; path = "../src/Assets/Fonts/Roboto-Italic.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		E40449E03C664F3598EE1C69 /* Roboto-Light.ttf */ = {isa = PBXFileReference; name = "Roboto-Light.ttf"; path = "../src/Assets/Fonts/Roboto-Light.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		5292CAB7D07246D6AC82366D /* Roboto-LightItalic.ttf */ = {isa = PBXFileReference; name = "Roboto-LightItalic.ttf"; path = "../src/Assets/Fonts/Roboto-LightItalic.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		50EAFE7E81B040F99F5D6386 /* Roboto-Medium.ttf */ = {isa = PBXFileReference; name = "Roboto-Medium.ttf"; path = "../src/Assets/Fonts/Roboto-Medium.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		AF5AA323067D4254B437AA97 /* Roboto-MediumItalic.ttf */ = {isa = PBXFileReference; name = "Roboto-MediumItalic.ttf"; path = "../src/Assets/Fonts/Roboto-MediumItalic.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		0BC0CC68E1924F5BA2D01716 /* Roboto-Regular.ttf */ = {isa = PBXFileReference; name = "Roboto-Regular.ttf"; path = "../src/Assets/Fonts/Roboto-Regular.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		37DB7AD8076F4E6897B39B73 /* Roboto-Thin.ttf */ = {isa = PBXFileReference; name = "Roboto-Thin.ttf"; path = "../src/Assets/Fonts/Roboto-Thin.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		C3C606AF09CB45958A180C85 /* Roboto-ThinItalic.ttf */ = {isa = PBXFileReference; name = "Roboto-ThinItalic.ttf"; path = "../src/Assets/Fonts/Roboto-ThinItalic.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		00E356EB1AD99517003FC87E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7699B88040F8A987B510C191 /* libPods-MovieApp-MovieAppTests.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		13B07F8C1A680F5B00A75B9A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0C80B921A6F3F58F76C31292 /* libPods-MovieApp.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		00E356EF1AD99517003FC87E /* MovieAppTests */ = {
+			isa = PBXGroup;
+			children = (
+				00E356F21AD99517003FC87E /* MovieAppTests.m */,
+				00E356F01AD99517003FC87E /* Supporting Files */,
+			);
+			path = MovieAppTests;
+			sourceTree = "<group>";
+		};
+		00E356F01AD99517003FC87E /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				00E356F11AD99517003FC87E /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		13B07FAE1A68108700A75B9A /* MovieApp */ = {
+			isa = PBXGroup;
+			children = (
+				13B07FAF1A68108700A75B9A /* AppDelegate.h */,
+				13B07FB01A68108700A75B9A /* AppDelegate.mm */,
+				13B07FB51A68108700A75B9A /* Images.xcassets */,
+				13B07FB61A68108700A75B9A /* Info.plist */,
+				81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */,
+				13B07FB71A68108700A75B9A /* main.m */,
+			);
+			name = MovieApp;
+			sourceTree = "<group>";
+		};
+		2D16E6871FA4F8E400B85C8A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				ED297162215061F000B7C4FE /* JavaScriptCore.framework */,
+				5DCACB8F33CDC322A6C60F78 /* libPods-MovieApp.a */,
+				19F6CBCC0A4E27FBF8BF4A61 /* libPods-MovieApp-MovieAppTests.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		832341AE1AAA6A7D00B99B32 /* Libraries */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Libraries;
+			sourceTree = "<group>";
+		};
+		83CBB9F61A601CBA00E9B192 = {
+			isa = PBXGroup;
+			children = (
+				13B07FAE1A68108700A75B9A /* MovieApp */,
+				832341AE1AAA6A7D00B99B32 /* Libraries */,
+				00E356EF1AD99517003FC87E /* MovieAppTests */,
+				83CBBA001A601CBA00E9B192 /* Products */,
+				2D16E6871FA4F8E400B85C8A /* Frameworks */,
+				BBD78D7AC51CEA395F1C20DB /* Pods */,
+				D58082F73EA64FC8B6C7CED5 /* Resources */,
+			);
+			indentWidth = 2;
+			sourceTree = "<group>";
+			tabWidth = 2;
+			usesTabs = 0;
+		};
+		83CBBA001A601CBA00E9B192 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				13B07F961A680F5B00A75B9A /* MovieApp.app */,
+				00E356EE1AD99517003FC87E /* MovieAppTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BBD78D7AC51CEA395F1C20DB /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3B4392A12AC88292D35C810B /* Pods-MovieApp.debug.xcconfig */,
+				5709B34CF0A7D63546082F79 /* Pods-MovieApp.release.xcconfig */,
+				5B7EB9410499542E8C5724F5 /* Pods-MovieApp-MovieAppTests.debug.xcconfig */,
+				89C6BE57DB24E9ADA2F236DE /* Pods-MovieApp-MovieAppTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		D58082F73EA64FC8B6C7CED5 /* Resources */ = {
+			isa = "PBXGroup";
+			children = (
+				8AAAF6E2E85E4810B63B8D0C /* Inter_18pt-Black.ttf */,
+				A0B2FDC147FC4A9698D62740 /* Inter_18pt-BlackItalic.ttf */,
+				2589620621484FD189DA250A /* Inter_18pt-Bold.ttf */,
+				35A050A4E85F4E3E92F34F07 /* Inter_18pt-BoldItalic.ttf */,
+				55F1866294C04757BD216FF0 /* Inter_18pt-ExtraBold.ttf */,
+				F478CE4E56E34A6A87521D74 /* Inter_18pt-ExtraBoldItalic.ttf */,
+				539D6299FE4449F5ACB699FF /* Inter_18pt-ExtraLight.ttf */,
+				789D8DF11FD5475DA4F94AA5 /* Inter_18pt-ExtraLightItalic.ttf */,
+				9827B33641DD48268E50C44B /* Inter_18pt-Italic.ttf */,
+				581A3E4DC0A54B9997421A35 /* Inter_18pt-Light.ttf */,
+				0E61CAD2560E4E9AB60ACCEE /* Inter_18pt-LightItalic.ttf */,
+				024C8CA0B9EC4E17A08F6D25 /* Inter_18pt-Medium.ttf */,
+				3A1ABB2FDB9343E7B720C334 /* Inter_18pt-MediumItalic.ttf */,
+				28B750A4EC724EECB8ACAA89 /* Inter_18pt-Regular.ttf */,
+				08BB12D260D341E68CB5C503 /* Inter_18pt-SemiBold.ttf */,
+				441D3C721A7B4D0B9A705EA2 /* Inter_18pt-SemiBoldItalic.ttf */,
+				3C28D1721EAC4B6494ADA1F3 /* Inter_18pt-Thin.ttf */,
+				F37C335654EB4FEE9EA0C5DC /* Inter_18pt-ThinItalic.ttf */,
+				D6B6E3639E2842F09006D7E4 /* Inter_24pt-Black.ttf */,
+				D32B43B54E3243C19801254B /* Inter_24pt-BlackItalic.ttf */,
+				17CF4B3FD014449F95E90E99 /* Inter_24pt-Bold.ttf */,
+				97A08831B93440F394D03056 /* Inter_24pt-BoldItalic.ttf */,
+				3D78E2CBE8544428926F6C4B /* Inter_24pt-ExtraBold.ttf */,
+				838BF9B5496341F6A626BFDF /* Inter_24pt-ExtraBoldItalic.ttf */,
+				C2AF529DB9B2444EA848017A /* Inter_24pt-ExtraLight.ttf */,
+				73684029E5ED443393F0B0C0 /* Inter_24pt-ExtraLightItalic.ttf */,
+				4106FE07B9DA4372BAB4F98B /* Inter_24pt-Italic.ttf */,
+				B4A512B001BD4BAE91E1CF53 /* Inter_24pt-Light.ttf */,
+				6DD2D7557AAB40499B2B7288 /* Inter_24pt-LightItalic.ttf */,
+				E130B839FD55419E91109F13 /* Inter_24pt-Medium.ttf */,
+				1BF8F4C97CB844B6A5D1ECC4 /* Inter_24pt-MediumItalic.ttf */,
+				3438C3B9E50947029EFFA6C8 /* Inter_24pt-Regular.ttf */,
+				676B83CA797242008F9E0F92 /* Inter_24pt-SemiBold.ttf */,
+				EBED8B434A714C17B9DA1900 /* Inter_24pt-SemiBoldItalic.ttf */,
+				6A343A012710446099B2B239 /* Inter_24pt-Thin.ttf */,
+				C2659BB5D05D4488A3DA76F6 /* Inter_24pt-ThinItalic.ttf */,
+				081AEE2799684B6489E13809 /* Inter_28pt-Black.ttf */,
+				51224B908A5C4123B32329B0 /* Inter_28pt-BlackItalic.ttf */,
+				FB5A8C22BDDC4C9A84897486 /* Inter_28pt-Bold.ttf */,
+				78D31CF22B734C8D89CC4B72 /* Inter_28pt-BoldItalic.ttf */,
+				76D90C1692AF41F698EB441E /* Inter_28pt-ExtraBold.ttf */,
+				D9195C9A4A234DA796512743 /* Inter_28pt-ExtraBoldItalic.ttf */,
+				7B60C80994CC4349AFDCED64 /* Inter_28pt-ExtraLight.ttf */,
+				C2A726996F0A4FF4AB8F4182 /* Inter_28pt-ExtraLightItalic.ttf */,
+				B91E51D7CA7C42C3ABA18DEB /* Inter_28pt-Italic.ttf */,
+				31140DD2BA5C41A98C6BF5D4 /* Inter_28pt-Light.ttf */,
+				FBE179CBD8294C5FBAD825E2 /* Inter_28pt-LightItalic.ttf */,
+				35F0367F7F8A4482A618E22D /* Inter_28pt-Medium.ttf */,
+				FF86536C575047209EAF5CEB /* Inter_28pt-MediumItalic.ttf */,
+				A181DA43F2C748C2B9077AD8 /* Inter_28pt-Regular.ttf */,
+				95952B0D3D6947739AE31359 /* Inter_28pt-SemiBold.ttf */,
+				1A3FF7B8E2094B53BC3CDDEE /* Inter_28pt-SemiBoldItalic.ttf */,
+				5AC4C5A3732D46C588396B2F /* Inter_28pt-Thin.ttf */,
+				34750C32C77246A89C7CDC3F /* Inter_28pt-ThinItalic.ttf */,
+				ED280B2D5D404B2FAF9671AF /* Roboto-Black.ttf */,
+				278D1721C2F04150BBA20C19 /* Roboto-BlackItalic.ttf */,
+				3ACD9FC74C76427792BFF1BE /* Roboto-Bold.ttf */,
+				A93CCAD25FB3430EB423CDDA /* Roboto-BoldItalic.ttf */,
+				6528F02E71F64651B5AB68AF /* Roboto-Italic.ttf */,
+				E40449E03C664F3598EE1C69 /* Roboto-Light.ttf */,
+				5292CAB7D07246D6AC82366D /* Roboto-LightItalic.ttf */,
+				50EAFE7E81B040F99F5D6386 /* Roboto-Medium.ttf */,
+				AF5AA323067D4254B437AA97 /* Roboto-MediumItalic.ttf */,
+				0BC0CC68E1924F5BA2D01716 /* Roboto-Regular.ttf */,
+				37DB7AD8076F4E6897B39B73 /* Roboto-Thin.ttf */,
+				C3C606AF09CB45958A180C85 /* Roboto-ThinItalic.ttf */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+			path = "";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		00E356ED1AD99517003FC87E /* MovieAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 00E357021AD99517003FC87E /* Build configuration list for PBXNativeTarget "MovieAppTests" */;
+			buildPhases = (
+				A55EABD7B0C7F3A422A6CC61 /* [CP] Check Pods Manifest.lock */,
+				00E356EA1AD99517003FC87E /* Sources */,
+				00E356EB1AD99517003FC87E /* Frameworks */,
+				00E356EC1AD99517003FC87E /* Resources */,
+				C59DA0FBD6956966B86A3779 /* [CP] Embed Pods Frameworks */,
+				F6A41C54EA430FDDC6A6ED99 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				00E356F51AD99517003FC87E /* PBXTargetDependency */,
+			);
+			name = MovieAppTests;
+			productName = MovieAppTests;
+			productReference = 00E356EE1AD99517003FC87E /* MovieAppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		13B07F861A680F5B00A75B9A /* MovieApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "MovieApp" */;
+			buildPhases = (
+				C38B50BA6285516D6DCD4F65 /* [CP] Check Pods Manifest.lock */,
+				13B07F871A680F5B00A75B9A /* Sources */,
+				13B07F8C1A680F5B00A75B9A /* Frameworks */,
+				13B07F8E1A680F5B00A75B9A /* Resources */,
+				00DD1BFF1BD5951E006B06BC /* Bundle React Native code and images */,
+				00EEFC60759A1932668264C0 /* [CP] Embed Pods Frameworks */,
+				E235C05ADACE081382539298 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MovieApp;
+			productName = MovieApp;
+			productReference = 13B07F961A680F5B00A75B9A /* MovieApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		83CBB9F71A601CBA00E9B192 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1210;
+				TargetAttributes = {
+					00E356ED1AD99517003FC87E = {
+						CreatedOnToolsVersion = 6.2;
+						TestTargetID = 13B07F861A680F5B00A75B9A;
+					};
+					13B07F861A680F5B00A75B9A = {
+						LastSwiftMigration = 1120;
+					};
+				};
+			};
+			buildConfigurationList = 83CBB9FA1A601CBA00E9B192 /* Build configuration list for PBXProject "MovieApp" */;
+			compatibilityVersion = "Xcode 12.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 83CBB9F61A601CBA00E9B192;
+			productRefGroup = 83CBBA001A601CBA00E9B192 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				13B07F861A680F5B00A75B9A /* MovieApp */,
+				00E356ED1AD99517003FC87E /* MovieAppTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		00E356EC1AD99517003FC87E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		13B07F8E1A680F5B00A75B9A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */,
+				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
+				BF3B934EB7444F988C3F6A88 /* Inter_18pt-Black.ttf in Resources */,
+				AC75E734213149B2BBDF4FDB /* Inter_18pt-BlackItalic.ttf in Resources */,
+				E1E95F8B5E684B9AA26DEA78 /* Inter_18pt-Bold.ttf in Resources */,
+				FF03293199734615B7E49729 /* Inter_18pt-BoldItalic.ttf in Resources */,
+				CA90C05F82474B50A908B756 /* Inter_18pt-ExtraBold.ttf in Resources */,
+				B85238CD8A844E96A79CD67C /* Inter_18pt-ExtraBoldItalic.ttf in Resources */,
+				1771404C044B4A51BDA23990 /* Inter_18pt-ExtraLight.ttf in Resources */,
+				CC928A25522F47C69A852B05 /* Inter_18pt-ExtraLightItalic.ttf in Resources */,
+				D4CB854F49DF4DA8AE9E3DE2 /* Inter_18pt-Italic.ttf in Resources */,
+				A20551BCB00741FAA01238C3 /* Inter_18pt-Light.ttf in Resources */,
+				F0FD01B8F7264BFBB7925604 /* Inter_18pt-LightItalic.ttf in Resources */,
+				8962104EC52345BE82F14F11 /* Inter_18pt-Medium.ttf in Resources */,
+				C4A2CD012E744C55BEE37B47 /* Inter_18pt-MediumItalic.ttf in Resources */,
+				FDEF84BCCE7346ED856B2370 /* Inter_18pt-Regular.ttf in Resources */,
+				DFE315611C6548F0833D902B /* Inter_18pt-SemiBold.ttf in Resources */,
+				8C33FCD505D04079A37ABA26 /* Inter_18pt-SemiBoldItalic.ttf in Resources */,
+				F7F69A398939478C888A50B9 /* Inter_18pt-Thin.ttf in Resources */,
+				094FA427F48D4C6F93FC121E /* Inter_18pt-ThinItalic.ttf in Resources */,
+				E686BD14AD004F54BF121CF3 /* Inter_24pt-Black.ttf in Resources */,
+				4E3FC69CA2BC45329510C3DE /* Inter_24pt-BlackItalic.ttf in Resources */,
+				514EFA3A6D6B4894B23738D1 /* Inter_24pt-Bold.ttf in Resources */,
+				368A0439CB364221ABCFE95E /* Inter_24pt-BoldItalic.ttf in Resources */,
+				EC79A2B86BB44C3DA1B56DB9 /* Inter_24pt-ExtraBold.ttf in Resources */,
+				F90D0753F6DF4B1AAE31C831 /* Inter_24pt-ExtraBoldItalic.ttf in Resources */,
+				D3BDAE4224054928A3C17D39 /* Inter_24pt-ExtraLight.ttf in Resources */,
+				DA9AF545554E4593AD1585E6 /* Inter_24pt-ExtraLightItalic.ttf in Resources */,
+				80914F90B6A947A2965936B2 /* Inter_24pt-Italic.ttf in Resources */,
+				E85F8597E04445C2BE13338F /* Inter_24pt-Light.ttf in Resources */,
+				FA28C055168C41D3B6C3A37D /* Inter_24pt-LightItalic.ttf in Resources */,
+				57CFD2DE471940DE8E7CF5DB /* Inter_24pt-Medium.ttf in Resources */,
+				31F9ECE52DE142DB96F5026D /* Inter_24pt-MediumItalic.ttf in Resources */,
+				DC21552AAB6D4BE8AF1DABE9 /* Inter_24pt-Regular.ttf in Resources */,
+				05BCFF71E2054DA5836862DB /* Inter_24pt-SemiBold.ttf in Resources */,
+				BB9930A579B24E78AD19C42E /* Inter_24pt-SemiBoldItalic.ttf in Resources */,
+				C2A44CC68B1F440299076671 /* Inter_24pt-Thin.ttf in Resources */,
+				CD05FF63106F4869947BFE7A /* Inter_24pt-ThinItalic.ttf in Resources */,
+				B114C55886C44357A0E8D0ED /* Inter_28pt-Black.ttf in Resources */,
+				A651F19FB2F44C30B29FBA85 /* Inter_28pt-BlackItalic.ttf in Resources */,
+				CDD9BB7CC77F4978A0623335 /* Inter_28pt-Bold.ttf in Resources */,
+				6D1BA775A06948DC88D048F3 /* Inter_28pt-BoldItalic.ttf in Resources */,
+				17B30F7C9128408BA232B205 /* Inter_28pt-ExtraBold.ttf in Resources */,
+				75CC4C1551274DFD88B37B09 /* Inter_28pt-ExtraBoldItalic.ttf in Resources */,
+				C41D4639DC79450098F4BBAD /* Inter_28pt-ExtraLight.ttf in Resources */,
+				84B7A716BDFE4D358326BF0C /* Inter_28pt-ExtraLightItalic.ttf in Resources */,
+				BD9C451FBDD8461895B09038 /* Inter_28pt-Italic.ttf in Resources */,
+				06B121CEAC2446F795E46BD6 /* Inter_28pt-Light.ttf in Resources */,
+				9353C49D11104DE19B224BA9 /* Inter_28pt-LightItalic.ttf in Resources */,
+				E1BA6660596D46BFBA0FA494 /* Inter_28pt-Medium.ttf in Resources */,
+				0AE4CBA128A44D7F9B14CC4B /* Inter_28pt-MediumItalic.ttf in Resources */,
+				5153C81AC8774467A1953C2E /* Inter_28pt-Regular.ttf in Resources */,
+				6F692C3713704D8DA02CD770 /* Inter_28pt-SemiBold.ttf in Resources */,
+				4D62FBA1AC76465A9B496F31 /* Inter_28pt-SemiBoldItalic.ttf in Resources */,
+				60F2C829C45D4803A475AE0D /* Inter_28pt-Thin.ttf in Resources */,
+				02A3ACC454444242BDB10B7C /* Inter_28pt-ThinItalic.ttf in Resources */,
+				14F1A798EDDE484F8B267546 /* Roboto-Black.ttf in Resources */,
+				ECF9E5D5B9AA4CBE85596608 /* Roboto-BlackItalic.ttf in Resources */,
+				711AE11491224F7FB87AA03E /* Roboto-Bold.ttf in Resources */,
+				F35E7B6BEB3F4FBAA9CF86E3 /* Roboto-BoldItalic.ttf in Resources */,
+				7B761F4280014E61829F0B6F /* Roboto-Italic.ttf in Resources */,
+				15441216C6B2455CB5C5A2F4 /* Roboto-Light.ttf in Resources */,
+				28F33DB0A7E94F1FA2E5C517 /* Roboto-LightItalic.ttf in Resources */,
+				0CACD6AE7C75415883B7FFDA /* Roboto-Medium.ttf in Resources */,
+				5AE6BD5CA7C940628DEBDFB6 /* Roboto-MediumItalic.ttf in Resources */,
+				7C9BBE0092264B3E810C959B /* Roboto-Regular.ttf in Resources */,
+				3ACF00D88CE14F24B031F2DB /* Roboto-Thin.ttf in Resources */,
+				D05E0A62F4AB448C95AACD14 /* Roboto-ThinItalic.ttf in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		00DD1BFF1BD5951E006B06BC /* Bundle React Native code and images */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/.xcode.env.local",
+				"$(SRCROOT)/.xcode.env",
+			);
+			name = "Bundle React Native code and images";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -e\n\nWITH_ENVIRONMENT=\"../node_modules/react-native/scripts/xcode/with-environment.sh\"\nREACT_NATIVE_XCODE=\"../node_modules/react-native/scripts/react-native-xcode.sh\"\n\n/bin/sh -c \"$WITH_ENVIRONMENT $REACT_NATIVE_XCODE\"\n";
+		};
+		00EEFC60759A1932668264C0 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MovieApp/Pods-MovieApp-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MovieApp/Pods-MovieApp-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MovieApp/Pods-MovieApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A55EABD7B0C7F3A422A6CC61 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MovieApp-MovieAppTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C38B50BA6285516D6DCD4F65 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MovieApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C59DA0FBD6956966B86A3779 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MovieApp-MovieAppTests/Pods-MovieApp-MovieAppTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MovieApp-MovieAppTests/Pods-MovieApp-MovieAppTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MovieApp-MovieAppTests/Pods-MovieApp-MovieAppTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E235C05ADACE081382539298 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MovieApp/Pods-MovieApp-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MovieApp/Pods-MovieApp-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MovieApp/Pods-MovieApp-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F6A41C54EA430FDDC6A6ED99 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MovieApp-MovieAppTests/Pods-MovieApp-MovieAppTests-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MovieApp-MovieAppTests/Pods-MovieApp-MovieAppTests-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MovieApp-MovieAppTests/Pods-MovieApp-MovieAppTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		00E356EA1AD99517003FC87E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				00E356F31AD99517003FC87E /* MovieAppTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		13B07F871A680F5B00A75B9A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				13B07FBC1A68108700A75B9A /* AppDelegate.mm in Sources */,
+				13B07FC11A68108700A75B9A /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		00E356F51AD99517003FC87E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 13B07F861A680F5B00A75B9A /* MovieApp */;
+			targetProxy = 00E356F41AD99517003FC87E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		00E356F61AD99517003FC87E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5B7EB9410499542E8C5724F5 /* Pods-MovieApp-MovieAppTests.debug.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = MovieAppTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-lc++",
+					"$(inherited)",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MovieApp.app/MovieApp";
+			};
+			name = Debug;
+		};
+		00E356F71AD99517003FC87E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 89C6BE57DB24E9ADA2F236DE /* Pods-MovieApp-MovieAppTests.release.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COPY_PHASE_STRIP = NO;
+				INFOPLIST_FILE = MovieAppTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-lc++",
+					"$(inherited)",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MovieApp.app/MovieApp";
+			};
+			name = Release;
+		};
+		13B07F941A680F5B00A75B9A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3B4392A12AC88292D35C810B /* Pods-MovieApp.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_BITCODE = NO;
+				INFOPLIST_FILE = MovieApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+					"-lc++",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_NAME = MovieApp;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				VERSIONING_SYSTEM = "apple-generic";
+			};
+			name = Debug;
+		};
+		13B07F951A680F5B00A75B9A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5709B34CF0A7D63546082F79 /* Pods-MovieApp.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				INFOPLIST_FILE = MovieApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+					"-lc++",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_NAME = MovieApp;
+				SWIFT_VERSION = 5.0;
+				VERSIONING_SYSTEM = "apple-generic";
+			};
+			name = Release;
+		};
+		83CBBA201A601CBA00E9B192 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "c++20";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = "";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					/usr/lib/swift,
+					"$(inherited)",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"\"$(SDKROOT)/usr/lib/swift\"",
+					"\"$(TOOLCHAIN_DIR)/usr/lib/swift/$(PLATFORM_NAME)\"",
+					"\"$(inherited)\"",
+				);
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_CPLUSPLUSFLAGS = (
+					"$(OTHER_CFLAGS)",
+					"-DFOLLY_NO_CONFIG",
+					"-DFOLLY_MOBILE=1",
+					"-DFOLLY_USE_LIBCPP=1",
+					"-DFOLLY_CFG_NO_COROUTINES=1",
+				);
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		83CBBA211A601CBA00E9B192 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "c++20";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = "";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					/usr/lib/swift,
+					"$(inherited)",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"\"$(SDKROOT)/usr/lib/swift\"",
+					"\"$(TOOLCHAIN_DIR)/usr/lib/swift/$(PLATFORM_NAME)\"",
+					"\"$(inherited)\"",
+				);
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_CPLUSPLUSFLAGS = (
+					"$(OTHER_CFLAGS)",
+					"-DFOLLY_NO_CONFIG",
+					"-DFOLLY_MOBILE=1",
+					"-DFOLLY_USE_LIBCPP=1",
+					"-DFOLLY_CFG_NO_COROUTINES=1",
+				);
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		00E357021AD99517003FC87E /* Build configuration list for PBXNativeTarget "MovieAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				00E356F61AD99517003FC87E /* Debug */,
+				00E356F71AD99517003FC87E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "MovieApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				13B07F941A680F5B00A75B9A /* Debug */,
+				13B07F951A680F5B00A75B9A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		83CBB9FA1A601CBA00E9B192 /* Build configuration list for PBXProject "MovieApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				83CBBA201A601CBA00E9B192 /* Debug */,
+				83CBBA211A601CBA00E9B192 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 83CBB9F71A601CBA00E9B192 /* Project object */;
+}
