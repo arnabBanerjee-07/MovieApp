@@ -3,7 +3,9 @@ Movie App is a React Native app that fetches data from The Movie Database (TMDB)
 
 # System Environment
 Node.js: Version 18.17.0
+
 NPM: Version 9.6.7
+
 Java Development Kit (JDK): Version 17.0.6
 
 # Installation Instructions
